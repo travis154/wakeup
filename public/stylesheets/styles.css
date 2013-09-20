@@ -1,0 +1,544 @@
+body {
+	
+}
+small {
+	color:#c0c0c0;
+}
+.btn-group > .btn:first-child {
+	border-radius: 0;
+}
+
+.btn {
+	border-radius: 0;
+	background: #e9e9e9;
+	border: none;
+	text-shadow: none;
+	box-shadow: none;
+	padding: 9px 15px;
+	font-weight: bold;
+	font-size: 13px;
+	border: 1px solid #e1e1e1;
+}
+
+.btn:hover {
+	background: #e1e1e1;
+}
+
+#main-header .navbar-inner {
+	padding: 0px;
+	font-family: 'Roboto Condensed', sans-serif;
+	background: rgba(240, 240, 240, .8);
+	box-shadow: none;
+	border-bottom: 1px solid #ddd;
+}
+
+#main-header .span10 {
+	margin-left: 8.5%;
+}
+
+#menus{
+	margin-top:9px;	
+}
+
+#profile-head {
+	box-shadow: none;
+	border-radius: 0;
+	margin: 0;
+	width: 95%;
+	margin-bottom: 15px;
+}
+
+#profile-head img {
+	float: left;
+	margin: 15px;
+	margin-top: 0;
+	margin-left: 0;
+}
+
+.clear-left {
+	clear: left;
+}
+
+
+#main-header .brand, #main-header .brand:visited {
+	color: #DB3C14;
+	font-size: 32px;
+	line-height: 10px;
+	letter-spacing: 0.5px;
+}
+
+#main-header a {
+	color: #747C81;
+	letter-spacing: 1px;
+}
+
+#main-header a:hover {
+	color: #3E4248;
+}
+
+#main {
+	margin-top: 80px;
+	position: relative;
+}
+
+#post-form {
+	padding-top: 17px!important;
+	padding-bottom: 17px!important;
+}
+
+#post-form .span7 {
+	width: 94%;
+}
+
+#post-form textarea {
+	background: rgba(0, 0, 0, 0.1);
+	margin-bottom: 10px;
+}
+
+#post-btn {
+	
+}
+
+#text-menu {
+	width: 63%;
+	float: left;
+}
+
+#attach-menu {
+	width: 28.5%;
+	float: right;
+}
+
+#meme-textarea {
+	display: none;
+}
+
+#meme-textarea textarea {
+	width: 45%;
+	border-radius: 0;
+	padding: 10px;
+	background: rgba(0, 0, 0, .05);
+	border: 1px solid #ddd;
+	box-shadow: none;
+}
+
+.menu-headings {
+	margin-bottom: 3px;
+	font-weight: bold;
+	font-size: 13px;
+	color: #666;
+}
+
+#anymeme {
+	background: rgba(255, 255, 255, .6);
+	border: 1px solid rgba(255, 255, 255, .8);
+	text-shadow: none;
+}
+
+#anymeme h3 {
+	font-weight: 200;
+	color: #3E4248;
+}
+
+#anymeme p {
+	color: #747C81;
+}
+
+#sub-header .nav a, #sort-header .nav a {
+	font-size: 11px;
+	font-weight: 22;
+}
+
+.top-block {
+	margin: 0;
+	background: rgba(255, 255, 255, .6);
+	border: 1px solid rgba(255, 255, 255, .8);
+	text-shadow: none;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+.top-block h3 {
+	font-family: 'Roboto Condensed', sans-serif;
+	margin: 0;
+	margin-left: 10px;
+	color: #3E4248;
+	font-size: 14px;
+}
+
+.top-block img {
+	margin-left: 0px;
+	margin-right: 10px;
+}
+
+.top-block li {
+	padding: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	max-width: 260px;
+}
+
+.top-block li a {
+	font-size: 10px;
+	font-weight: bold;
+}
+
+ #sort-header .navbar-inner {
+ 	border-radius: 0;
+ 	background: whiteSmoke;
+ 	border: 1px solid #eee;
+ 	box-shadow: none;
+ }
+
+ #sub-header .navbar-inner {
+	background: whiteSmoke;
+	border: 1px solid #eee;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+#sub-header form, #sort-header form {
+	margin: 0;
+	padding-top: 6px;
+}
+
+#sub-header #input {
+	background: rgba(0, 0, 0, 0.05);
+	border-radius: 0;
+	border: 1px solid #ddd;
+	box-shadow: none;
+	width: 98%;
+}
+
+.green,.green:hover {
+	background: rgb(83, 169, 63);
+	border: 1px solid #53A93F;
+	font-weight: bold;
+	color: white;
+	box-shadow: none;
+	text-shadow: none;
+}
+
+#change-canvas-alpha, #change-canvas-textshadow {
+	font-size: 9px;
+}
+
+#third-row, #second-row {
+	clear: both;
+}
+
+.top-block-like-menu {
+	font-size: 9px;
+	margin-top: 5px;
+}
+
+#display-likes-box {
+	margin-left: 10px;
+}
+
+.top-block-like-menu .btn {
+	margin-top: -3px;
+}
+
+.top-block-likes {
+	text-align: center;
+	color: #53A93F!important;
+	margin-right: 0px;
+	padding: 6px;
+	padding-right: 0;
+	color: #666!important;
+	background: rgba(0, 0, 0, .05);
+	color: white;
+	float: left;
+	padding-right: 5px;
+	margin-right: 5px;
+	border: 1px solid #eee;
+}
+
+.top-block-likes strong, .top-block-dislikes strong {
+	color: #53A93F!important;
+	display: block;
+}
+
+#fb-comment-container {
+	margin-left: 6%;
+}
+
+.top-block-likes i, .top-block-dislikes i {
+	color: rgb(219, 60, 20)!important;
+}
+
+.top-block-dislikes {
+	margin-right: 0px;
+	float: left;
+	text-align: center;
+	padding: 6px;
+	padding-right: 0;
+	color: #666!important;
+	background: rgba(0, 0, 0, .05);
+	color: white;
+	padding-right: 5px;
+	margin-right: 5px;
+	border: 1px solid #eee;
+}
+
+.display-name-mini {
+	margin-top: -6px;
+	margin-bottom: 5px;
+	margin-left: 55px;
+}
+
+.mini-user-info {
+	margin: 0;
+}
+
+.mini-user-info a {
+	color: rgb(66, 127, 237)!important;
+	text-decoration: none;
+}
+
+.top-block-span2 {
+	margin: 0!important;
+	width: 110px;
+	margin-top: -5px!important;
+}
+
+.clear {
+	clear: both;
+}
+
+.normal {
+	text-decoration: none;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.underlined {
+	text-decoration: underline;
+}
+
+.font-small {
+	font-size: 14px;
+}
+
+.font-normal {
+	font-size: 18px;
+}
+
+.font-large {
+	font-size: 26px;
+}
+
+.font-huge {
+	font-size: 38px;
+}
+
+.post-image {
+	width: 95%;
+	margin: 10px;
+	background: #eee;
+	padding: 2px 5px;
+}
+
+#follow-user {
+	color: white!important;
+	background: rgb(219, 60, 20);
+	color: white;
+	padding: 2px;
+}
+
+#follow-user-large {
+	color: white!important;
+	background: rgb(66, 127, 237);
+	color: white;
+	padding: 10px;
+}
+
+.follow-btn:hover{
+	background:#f0f0f0;
+}
+.post:hover .follow-btn{
+	opacity:1;
+}
+.post .top-block-likes, .post .top-block-dislikes {
+	font-size: 12px;
+}
+
+.post-head {
+	padding: 10px;
+	width: 98%;
+	float: left;
+	border-bottom: 1px solid #eee;
+}
+
+.post-head img {
+	width: 45px;
+	float: left;
+	margin-right: 10px;
+}
+
+.post-head a {
+	font-size: 12px;
+	font-weight: bold;
+	display: block;
+	color: rgb(66, 127, 237)!important;
+}
+
+.post-head .date {
+	font-size: 10px;
+	color: #666;
+	font-weight: normal;
+	margin-left: 10px;
+}
+
+.margin-zero {
+	margin: 0;
+}
+
+.post .post-footer {
+	margin-top: 15px;
+}
+
+.big-post {
+	background: rgba(255, 255, 255, .8);
+	padding: 15px;
+	margin-left: auto;
+	margin-top: -20px;
+}
+
+.big-post .top-block-likes, .post .top-block-dislikes {
+	font-size: 12px;
+}
+
+.big-post-head {
+	padding-bottom: 10px;
+	width: 200px;
+	float: left;
+}
+
+.big-post-head img {
+	width: 45px;
+	float: left;
+	margin-right: 10px;
+}
+
+.big-post-head a {
+	font-size: 12px;
+	font-weight: bold;
+	display: block;
+	color: #DB3C14;
+}
+
+.big-post-head .date {
+	font-size: 10px;
+	color: #666;
+}
+
+.big-post-like-menu {
+	float: right;
+}
+
+.big-post .post-footer {
+	margin-top: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #ddd;
+}
+
+#next-menu {
+	position: fixed;
+	width: 590px;
+	background: rgba(255, 255, 255, .7);
+	top: 92px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+#next-menu .span4 {
+	width: 295px;
+	margin: 0;
+}
+
+#previous-btn {
+	margin: 0;
+}
+
+.comment, .comment-user {
+	margin: 0;
+	margin-right: 10px;
+}
+
+.comment img {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.comment {
+	font-size: 12px;
+	width: 700px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 10px;
+}
+
+.comment .date {
+	display: block;
+	font-size: 10px;
+	color: #666;
+}
+
+.big-post h4 {
+	margin: 20px 0;
+}
+
+.comment.reply {
+	margin-left: 50px;
+	width: 640px;
+}
+
+.comment textarea {
+	background: rgba(0, 0, 0, 0.1);
+	width: 620px;
+}
+
+#comment-input {
+	padding-bottom: 10px;
+}
+
+.top-posts-list img {
+	float: left;
+}
+
+.top-block-span2 {
+	float: left;
+	width: 50px;
+}
+.unfollow-btn{
+	background:rgb(224, 224, 224) !important;
+}
+.fb-btn {
+	color: white !important;
+	text-shadow: none !important;
+	background: rgb(59, 89, 152) !important;
+	border: 1px solid rgb(53, 79, 132) !important;
+	padding: 5px 20px !important;
+	padding-left: 5px !important;
+	font-size: 11px !important;
+	font-weight: bold !important;
+}
+
+.fb-btn i {
+	padding: 9px 7px;
+	padding-right: 11px;
+	margin-right: 10px;
+	border-right: 1px solid rgb(53, 79, 132);
+}
+

@@ -1,0 +1,77 @@
+extends layout
+
+block content
+	div#main-container.container
+		h2 Registration form
+		form(method='post', action='/register')#register.form-horizontal
+			div.control-group
+				label.control-label Username
+				div.controls
+					input(type='text', value=username, name='screen_name')#screen_name
+					section
+						span http://wakeupmv.com/
+						span#screen_name_display
+			div.control-group
+				label.control-label Phone Number
+				div.controls
+					input(type='text')#phone
+			div.control-group
+				label.control-label Email
+				div.controls
+					input(type='text')#email
+			div.control-group
+				label.control-label Twitter
+				div.controls
+					input(type='text')#twitter
+			div.control-group
+				label.control-label Activities
+				div.controls
+					div.btn-group(data-toggle="buttons-checkbox")#types
+						button.btn(type='button') Twitter
+						button.btn(type='button') Facebook
+						button.btn(type='button') Content Creation
+						button.btn(type='button') Networking
+						button.btn(type='button') Street Work
+			div.control-group
+				label.control-label 
+				div.controls
+					input(type='submit', value='Update').btn
+	script(type='text/javascript')
+		$(function(){
+			$("#screen_name").keyup(function(){
+				var val = $(this).val();
+				var col;
+				if($("#screen_name").val().match(/^[A-z]+$/) == null){
+					col = 'red';
+				}else{
+					col = 'green';
+				}
+				$("#screen_name_display").text(val).css("color", col);
+			});
+			$("#register").submit(function(e){
+				e.preventDefault();
+				var name = $("#screen_name").val();
+				if(name.match(/^[A-z]+$/) == null){
+					return;
+				}
+				var activities = [];
+				$("#types button.active").map(function(){activities.push($(this).text());})
+				var obj = {
+					screen_name:name,
+					phone:$("#phone").val(),
+					email:$("#email").val(),
+					twitter:$("#twitter").val(),
+					activities:activities
+				};
+				console.log(obj);
+				var data = JSON.stringify(obj);
+				//register
+				$.post('/register',{data:data} , function(res){
+					if(res.error){
+						alert(res.error);
+					}else{
+						window.location.reload(true);
+					}
+				});
+			});
+		});

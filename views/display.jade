@@ -1,0 +1,55 @@
+extends layout
+
+block content
+	-var _url = 'http://anyme.me/' + pic.username + '/' + pic._id;
+	-var cdn_pic = cdn_url+"/" + pic.pic;
+	-var post = pic;
+	div#fb-root
+	script(type='text/javascript')
+		pagename = "display";
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/all.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	script(type='text/javascript') !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
+	div.row
+		div.span7.offset1
+			section.row
+				div.big-post
+					div.post-head
+						img(src="http://graph.facebook.com/"+pic.user.username+"/picture")
+						a(href='/' + pic.user.screen_name)=pic.user.screen_name
+							span.date(title=moment(pic.date).format('LLLL'))=moment(post.date).fromNow()
+						include follow
+						br.clear
+					img.span7.post-image(src=cdn_pic)
+					div.post-footer
+						div#display-likes-box.pull-left
+							include like
+						-if(locals._user)			
+							span.top-block-likes
+								strong #{pic.views}
+								a.btn.btn-small.make-favorite(data-id=pic._id)
+									i.icon-star
+						div.pull-right(style='margin-right:15px')
+							div.span1
+								div.fb-like(data-send="false", data-layout="button_count", data-width="450", data-show-faces="true", data-font="segoe ui")
+							div.span1
+								a.twitter-share-button(href="https://twitter.com/share", data-via="anymemeOFFICIAL") Tweet
+							div.span1
+								a(href="//pinterest.com/pin/create/button/?url="+encodeURIComponent(_url)+"&media="+encodeURIComponent(cdn_pic)+"&description="+pic.user.screen_name+"%20on%20Anymeme", data-pin-do="buttonPin", data-pin-config="beside")
+									img(src="//assets.pinterest.com/images/pidgets/pin_it_button.png")
+						br.clear
+					div.row
+					include ad-top
+						div#fb-comment-container.span7
+							h4 Comments
+							fb:comments(num_posts="10", data-href=_url)		
+					include ad-below			
+		div.span2
+			include ad
+	script(src='//assets.pinterest.com/js/pinit.js')

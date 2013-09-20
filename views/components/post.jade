@@ -1,0 +1,12 @@
+.span7(data-id=post._id).post
+	-var _url = 'http://anyme.me/' + post.user.username + '/' + post._id;
+	.post-head
+		.pull-left.span3.mini-user-info
+			img.float-left(src="http://graph.facebook.com/"+post.user.username+"/picture", width="500", height="414")
+			a.display-name-mini(href='/' + post.user.screen_name)=post.user.screen_name
+				span.date(title=moment(post.date).format('LLLL'))=moment(post.date).fromNow()
+			include ../follow
+			br.clear
+		include ../like
+	a(href='/' + post.user.screen_name + '/' + post._id)
+		img.span7.post-image(src=cdn_url + '/' +  post.pic)

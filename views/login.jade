@@ -1,0 +1,50 @@
+doctype 5
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		-_title = typeof title == 'undefined' ? 'anyone can meme!' : title;
+		title=_title
+		-if(typeof prerender != 'undefined')
+			link(rel="prefetch", href=prerender)
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		meta(http-equiv="refresh", content="3000")
+		meta(name='description', content='Anymeme lets you generate your own memes quickly and follow other users who generate memes, quotes...etc. ')
+		meta(name='author', content='')
+		meta(name="google-site-verification", content="PAOA45GFH0ZjbRAATLZkf50sXLRMsah2nSThntUe9_4")
+		meta(name="msvalidate.01", content="0DAA6F8A4AFD9F89447E07504CB862BF")
+		link(rel='shortcut icon', href="/img/favicon.ico", type="image/x-icon")
+		link(href='http://fonts.googleapis.com/css?family=Oswald', rel='stylesheet', type='text/css')
+		link(href='http://fonts.googleapis.com/css?family=Days+One', rel='stylesheet', type='text/css')
+		link(href='/stylesheets/colorpicker.css', rel='stylesheet')
+		link(href='/stylesheets/bootstrap.min.css', rel='stylesheet')
+		link(href='/stylesheets/bootstrap-responsive.css', rel='stylesheet')
+		link(href='/stylesheets/bootstrap-fileupload.min.css', rel='stylesheet')
+		link(href='/stylesheets/styles.css', rel='stylesheet')
+		link(href='/stylesheets/font-awesome.min.css', rel='stylesheet')
+		link(href='/stylesheets/font-awesome-ie7.min.css', rel='stylesheet')
+		// if lt IE 9
+		link(rel='apple-touch-icon-precomposed', sizes='144x144', href='assets/ico/apple-touch-icon-144-precomposed.png')
+		link(rel='apple-touch-icon-precomposed', sizes='114x114', href='assets/ico/apple-touch-icon-114-precomposed.png')
+		link(rel='apple-touch-icon-precomposed', sizes='72x72', href='assets/ico/apple-touch-icon-72-precomposed.png')
+		link(rel='apple-touch-icon-precomposed', href='assets/ico/apple-touch-icon-57-precomposed.png')
+		script(src='/javascripts/jquery.js')
+		script(src='/javascripts/moment.min.js')
+		script(src='/templates.js')
+		script(src='/javascripts/bootstrap.js')
+		script(src='/javascripts/bootstrap-colorpicker.js')
+		script(src='/javascripts/bootstrap-fileupload.min.js')
+		script(src='/javascripts/jcanvas.min.js')
+		script(src='https://raw.github.com/olivernn/davis.js/master/davis.min.js')
+		script(src='/javascripts/web.js')
+		
+
+	body
+		section#main.container
+			-if (!registered)
+				a(href='/auth/facebook').btn.fb-btn
+					i.icon-facebook
+					| Login with Facebook
+			-else
+				h2 Thank you for registering in #WakeUpNOW. 
+			img(src="/img/logo.png", style='width:80%')			
+		include analytics
